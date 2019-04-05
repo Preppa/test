@@ -1,3 +1,5 @@
+/*共通部分css*/
+
 * {
   box-sizing: border-box;
 }
@@ -16,63 +18,23 @@ p {
   line-height: 15px;
 }
 
+.section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 .section-title {
-  font-size: 32px;
-  padding-top: 30px;
-  padding-bottom: 0px;
-  color: #5f5d60;
-  text-decoration: underline;
-}
-
-.clear {
-  clear:  left;
-}
-
-header {
-  height: 50px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-}
-
-.header-container {
-
-}
-
-.header-left {
-  padding-top:5px;
-  text-align: center;
-}
-
-.header-left h1 {
   font-size: 24px;
-  color: white;
-  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: #5f5d60;
 }
 
-.top-wrapper {
-  text-align: center;
-}
-
-.top-container {
-  background-image: url(./img/salon/Films_ginza/interior_1.jpg);
-  background-size: cover;
-  height: 500px;
-  width: 100%   ;
-  max-width: 750px;
-  margin: auto;
-  color: white;
-}
-
-.msg-wrapper {
-  text-align: center;
-  padding: 10px 15px;
-  background-color: #f7f7f7;
-}
-
-.price {
-  font-size: 28px;
-  color: blue;
-  text-decoration: underline;
+.sectionline {
+  width: 15%;
+  border-bottom: 1px #399cc6 solid;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .button {
@@ -80,6 +42,7 @@ header {
   width: 400px;
   padding: 8px;
   margin: 10px;
+  margin-top: 40px;
   border-bottom: solid 4px #627295;
   border-radius: 5px;
   background-color: #399cc6;
@@ -95,36 +58,94 @@ header {
   border-bottom: none;/*線を消す*/
 }
 
+.clear {
+  clear:  left;
+}
+
+/*以下bodyのcss*/
+
+/*header開始*/
+
+header {
+  height: 80px;
+  text-align: center;
+}
+
+.header-left {
+  padding-top:15px;
+}
+
+.header-left h1 {
+  font-size: 48px;
+  color: black;
+  margin: 5px 0px 20px;
+  font-family: "Arial Rounded MT Bold";
+}
+
+/*header終了*/
+
+/*top-wrapper開始*/
+
+.top-wrapper {
+  text-align: center;
+}
+
+.top-container {
+  background-image: url(./img/salon/Films_ginza/interior_1.jpg);
+  background-size: cover;
+  height: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+/*top-wrapper終了*/
+
+/*msg-wrapper開始*/
+
+.msg-wrapper {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+/*msg-wrapper終了*/
+
+/*service-wrapper開始*/
+
 .service-wrapper {
+  padding-bottom: 30px;
+}
+
+.sub-wrapper {
   max-width: 1000px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 
-.service-title p{
-  line-height: 10px;
-}
-
-.service-img{
+.service-contents{
   width: 100%;
-  padding-bottom: 30px;
 }
 
-.service-img img {
-  width: 80%;
+.service-content {
+  width: 33%;
+  float: left;
 }
+
+.service-content img {
+  width: 30%;
+}
+
+/*service-wrapper終了*/
+
+/*how-to-wrapper開始*/
 
 .how-to-wrapper {
-  text-align: center;
-  background-color: #f7f7f7;
   padding-top: 10px;
   padding-bottom: 40px;
 }
 
 .steps {
-  width: 60%;
-  margin: 0 auto;
+
 }
 
 .step {
@@ -146,22 +167,48 @@ header {
   padding-left: 15px;
 }
 
-.step-txt span{
-  font-size: 24px;
+/*how-to-wrapper終了*/
+
+
+/*price-wrapper開始*/
+
+.price-wrapper {
+  text-align: center;
+  padding-bottom: 40px;
 }
+
+.price {
+  color: #3AABD2;
+  font-size: 24px;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+.price-note {
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.price span {
+  font-size: 16px;
+}
+
+/*price-wrapper終了*/
+
+/*salon-wrapper開始*/
 
 .salon-wrapper {
   text-align: center;
 }
 
 .salon-list {
-  float: left;
   width: 50%;
+  float: left;
+  margin-top: 50px;
 }
 
 .salon-area {
   color: #399cc6;
-  text-align: center;
   padding-left: 20px;
   padding-bottom: 20px;
 }
@@ -171,64 +218,60 @@ header {
   margin: 0;
 }
 
-.sectionline {
-  width: 10%;
-  border-bottom: 1px #399cc6 solid;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
 .salon {
   background-color: #f7f7f7;
-  float: left;
-  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: 0 auto;
+  float: left;
 }
 
-.salon p {
-  font-size: 16px;
-  line-height: 20px;
+.salon-img {
+  width: 50%;
+  margin-top: 50px;
+  float: left;
+}
+
+.salon-img img {
+  width: 300px;
+}
+
+.salon-content {
+  width: 50%;
+  margin-top: 50px;
+  padding-left: 15px;
+  min-height: 280px;
+  max-width: 500px;
+  text-align: left;
+  float: left;
 }
 
 .salon-name {
   font-size: 22px;
   display: inline-block;
-  text-align: center;
-  margin-top: 15px;
-  line-height: 15px;
+  line-height: 5px;
 }
 
-.salon img {
-   width: 90%;
-   max-width: 500px;
-   height: auto;
-   max-height: 300px;
-}
-
-.salon-content {
-  width: 90%;
-  max-width: 500px;
-  text-align: left;
-  margin: auto;
+.salon-name p {
+  font-size: 16px;
 }
 
 .salon-address {
-  padding-left: 15px;
-  font-size: 14px;
+  line-height: 15px;
+}
+
+.salon-address a {
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 .salon-hour {
-  padding-left: 15px;
+  padding-top: 10px;
 }
 
-.salon-menu {
-  padding-left: 15px;
-}
+/*salon-wrapper終了*/
 
-.salon-phone {
-  padding-left: 15px;
-}
+/*contents-wrapper開始*/
 
 .contents-wrapper {
   padding-bottom: 80px;
@@ -256,6 +299,8 @@ header {
   text-align: left;
 }
 
+/*contents-wrapper終了*/
+
 footer {
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
@@ -266,4 +311,9 @@ footer {
 
 footer p {
   line-height: 20px;
+}
+
+footer h2 {
+  font-family: "Arial Rounded MT Bold";
+  font-size: 32px;
 }
